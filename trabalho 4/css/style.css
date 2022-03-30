@@ -1,0 +1,51 @@
+body {
+    color: #ffffff;
+    background-color: #ffd902;
+}
+
+.item {
+    border: solid 7px hsl(219, 96%, 35%);
+    background-color: #dddddd;
+    text-align: center;
+    padding: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 150px 80px 350px 150px;
+    grid-template-areas: "cabecalho cabecalho cabecalho cabecalho" 
+    "menu menu menu menu"
+     " bloc-esq bloc-esq bloc-esq bloc-dir"
+      "rodape rodape rodape rodape";
+      width: 60%;
+      height: 60%;
+      padding-left: 20%;
+      padding-top: 30px;
+      padding-bottom: 30px
+}
+
+
+.cabecalho {
+    grid-area: cabecalho;
+    background-color: #ffffff;
+}
+
+.menu {
+    grid-area: menu;
+    background-color: #ffffff;
+}
+
+.bloc-esq {
+    grid-area: bloc-esq;
+    background-color: #ffffff;
+}
+
+.bloc-dir {
+    grid-area: bloc-dir;
+    background-color: #ffffff;
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #ffffff}
